@@ -1,0 +1,4 @@
+Implement & test API key based auth
+Add Redis Caching for API response times, limit DB reads and yminer write
+Dockerfile config for prod runtime
+Storage for rate limiting https://flask-limiter.readthedocs.io/en/stable/#configuring-a-storage-backend

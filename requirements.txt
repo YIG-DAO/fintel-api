@@ -1,0 +1,8 @@
+flask
+Authlib
+sqlalchemy
+APScheduler
+Flask-Limiter
+twitter
+feedparser
+marshmallow

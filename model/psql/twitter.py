@@ -1,0 +1,1 @@
+GetCyberTweets = """SELECT * FROM gnosis_tweet JOIN gnosis_category_handles ON gnosis_tweet.handle_id = gnosis_category_handles.handle_id JOIN gnosis_handle ON gnosis_category_handles.handle_id = gnosis_handle.id WHERE gnosis_category_handles.category_id = 6 ORDER BY gnosis_tweet.created_at DESC"""
