@@ -1,5 +1,5 @@
 from db.orm import rss_feeds, finance, base
-#from openbb_terminal.sdk import openbb
+from openbb_terminal.sdk import openbb
 
 MarketFeed = rss_feeds.MarketFeed
 SESSION = base.session
@@ -27,9 +27,32 @@ def getGovEconSources():
         return data
 
 def getEconomicEvents():
-    data = openbb.economy.events()
-    return data
+    query = openbb.economy.events()
+    if query is not None:
+        data = query
+        return data
+    else:
+        data = "OpenBB query issue"
+        return data
 
 def getCovidCases(country):
     data = openbb.alt.covid.global_cases(country)
     return data
+
+def getEconomicOverview():
+    query = openbb.economy.overview()
+    if query is not None:
+        data = query
+        return data
+    else:
+        data = "OpenBB query issue"
+        return data
+
+def getTrendingStocks():
+    query = openbb.stocks.ba.trending()
+    if query is not None:
+        data = query
+        return data
+    else:
+        data = "OpenBB query issue"
+        return data

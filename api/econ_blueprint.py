@@ -12,10 +12,19 @@ def getEconSources():
 def getGovEconSources():
     return econController.getGovFinanceSources()
 
-""" @econ_blueprint.route('/events')
+@econ_blueprint.route('/events')
 def getEconomicEvents():
     return econController.getEconomicEvents()
 
+@econ_blueprint.route('/overview')
+def getEconomicOverview():
+    return econController.getEconomicOverview()
+
+@econ_blueprint.route('/stocks/trending')
+def getTrendingStocks():
+    return econController.getTrendingStocks()
+
+""" 
 @econ_blueprint.route('/covid/cases')
 def getCovidCases():
     

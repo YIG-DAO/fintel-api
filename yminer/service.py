@@ -9,6 +9,6 @@ def yminer_service():
     CRYPTO_JOB_FREQUENCY = 1 # in hours
 
     sched = BackgroundScheduler(daemon=True)
-    sched.add_job(update_crypto,'interval',minutes=60, next_run_time=datetime.now())
+    sched.add_job(update_crypto,'interval',minutes=60, next_run_time=None) #datetime.now()
     sched.start()
     

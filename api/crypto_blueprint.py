@@ -19,3 +19,7 @@ def get_crypto_eur(crypto_symbol):
 @crypto_blueprint.route('/eur/all')
 def get_crypto_eur_all():
     return cryptoController.get_crypto_eur_all()
+
+@crypto_blueprint.route('/trending')
+def get_crypto_trending():
+    return cryptoController.get_crypto_trending()

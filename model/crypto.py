@@ -1,5 +1,5 @@
 from db.orm import crypto, base
-#from openbb_terminal.sdk import openbb
+from openbb_terminal.sdk import openbb
 
 CRYPTO = crypto.Crypto
 CRYPTOEUR = crypto.CryptoEUR
@@ -45,4 +45,13 @@ def get_crypto_eur_all():
         return data
     else:
         data = "Improper Crypto Symbol"
+        return data
+
+def getTrendingCrypto():
+    query = openbb.crypto.disc.trending()
+    if query is not None:
+        data = query
+        return data
+    else:
+        data = "OpenBB query issue"
         return data

@@ -1,3 +1,4 @@
+# Crypto Blueprint
 curl --request GET \
   --url http://localhost:5000/v1/crypto/usd/btc \
   --header 'content-type: application/json'
@@ -22,12 +23,18 @@ curl --request GET \
   --header 'content-type: application/json'
 
 curl --request GET \
+  --url http://localhost:5000/v1/crypto/trending \
+  --header 'content-type: application/json'
+
+# Cyber Blueprint
+curl --request GET \
   --url http://localhost:5000/v1/cyber/cti/sources \
   --header 'content-type: application/json'
 curl --request GET \
   --url http://localhost:5000/v1/cyber/cti/gov/sources \
   --header 'content-type: application/json'
 
+# Economics Blueprint
 curl --request GET \
   --url http://localhost:5000/v1/economics/sources \
   --header 'content-type: application/json'
@@ -35,3 +42,16 @@ curl --request GET \
 curl --request GET \
   --url http://localhost:5000/v1/economics/gov/sources \
   --header 'content-type: application/json'
+
+curl --request GET \
+  --url http://localhost:5000/v1/economics/events \
+  --header 'content-type: application/json'
+
+curl --request GET  \
+  --url http://localhost:5000/v1/economics/overview  \
+  --header 'content-type: application/json'
+
+curl --request GET  \
+  --url http://localhost:5000/v1/economics/stocks/trending  \
+  --header 'content-type: application/json'
+

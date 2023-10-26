@@ -1,0 +1,654 @@
+{
+  "data": [
+    {
+      "Actual": "10.7%",
+      "Consensus": "7.5%",
+      "Country": "Singapore",
+      "Date": "2023-10-26",
+      "Event": "Industrial Production",
+      "Previous": "-10.8%",
+      "Time (ET)": "01:00",
+      "index": 0
+    },
+    {
+      "Actual": "-2.1%",
+      "Consensus": "-4.8%",
+      "Country": "Singapore",
+      "Date": "2023-10-26",
+      "Event": "Industrial Production",
+      "Previous": "-11.6%",
+      "Time (ET)": "01:00",
+      "index": 1
+    },
+    {
+      "Actual": "11.84%",
+      "Consensus": "11.50%",
+      "Country": "Spain",
+      "Date": "2023-10-26",
+      "Event": "Spanish Unemployment Rate",
+      "Previous": "11.60%",
+      "Time (ET)": "03:00",
+      "index": 2
+    },
+    {
+      "Actual": "-5.3%",
+      "Consensus": "-",
+      "Country": "Hong Kong",
+      "Date": "2023-10-26",
+      "Event": "Exports",
+      "Previous": "-3.7%",
+      "Time (ET)": "04:30",
+      "index": 3
+    },
+    {
+      "Actual": "-0.4%",
+      "Consensus": "-",
+      "Country": "Hong Kong",
+      "Date": "2023-10-26",
+      "Event": "Imports",
+      "Previous": "-0.3%",
+      "Time (ET)": "04:30",
+      "index": 4
+    },
+    {
+      "Actual": "-64.6B",
+      "Consensus": "-",
+      "Country": "Hong Kong",
+      "Date": "2023-10-26",
+      "Event": "Trade Balance",
+      "Previous": "-25.6B",
+      "Time (ET)": "04:30",
+      "index": 5
+    },
+    {
+      "Actual": "3.976%",
+      "Consensus": "-",
+      "Country": "Italy",
+      "Date": "2023-10-26",
+      "Event": "Italian 6-Month BOT Auction",
+      "Previous": "3.997%",
+      "Time (ET)": "05:10",
+      "index": 6
+    },
+    {
+      "Actual": "5.1%",
+      "Consensus": "4.7%",
+      "Country": "South Africa",
+      "Date": "2023-10-26",
+      "Event": "PPI",
+      "Previous": "4.3%",
+      "Time (ET)": "05:30",
+      "index": 7
+    },
+    {
+      "Actual": "1.5%",
+      "Consensus": "1.1%",
+      "Country": "South Africa",
+      "Date": "2023-10-26",
+      "Event": "PPI",
+      "Previous": "1.0%",
+      "Time (ET)": "05:30",
+      "index": 8
+    },
+    {
+      "Actual": "-36",
+      "Consensus": "-16",
+      "Country": "United Kingdom",
+      "Date": "2023-10-26",
+      "Event": "CBI Distributive Trades Survey",
+      "Previous": "-14",
+      "Time (ET)": "06:00",
+      "index": 9
+    },
+    {
+      "Actual": "-",
+      "Consensus": "-",
+      "Country": "Euro Zone",
+      "Date": "2023-10-26",
+      "Event": "EU Leaders Summit",
+      "Previous": "-",
+      "Time (ET)": "06:00",
+      "index": 10
+    },
+    {
+      "Actual": "-",
+      "Consensus": "-",
+      "Country": "Brazil",
+      "Date": "2023-10-26",
+      "Event": "BCB National Monetary Council Meeting",
+      "Previous": "-",
+      "Time (ET)": "08:00",
+      "index": 11
+    },
+    {
+      "Actual": "5.05%",
+      "Consensus": "5.04%",
+      "Country": "Brazil",
+      "Date": "2023-10-26",
+      "Event": "Mid-Month CPI",
+      "Previous": "5.00%",
+      "Time (ET)": "08:00",
+      "index": 12
+    },
+    {
+      "Actual": "0.21%",
+      "Consensus": "0.20%",
+      "Country": "Brazil",
+      "Date": "2023-10-26",
+      "Event": "Mid-Month CPI",
+      "Previous": "0.35%",
+      "Time (ET)": "08:00",
+      "index": 13
+    },
+    {
+      "Actual": "1.11%",
+      "Consensus": "-",
+      "Country": "Brazil",
+      "Date": "2023-10-26",
+      "Event": "Brazilian PPI",
+      "Previous": "0.92%",
+      "Time (ET)": "08:00",
+      "index": 14
+    },
+    {
+      "Actual": "4.00%",
+      "Consensus": "4.00%",
+      "Country": "Euro Zone",
+      "Date": "2023-10-26",
+      "Event": "Deposit Facility Rate",
+      "Previous": "4.00%",
+      "Time (ET)": "08:15",
+      "index": 15
+    },
+    {
+      "Actual": "4.75%",
+      "Consensus": "-",
+      "Country": "Euro Zone",
+      "Date": "2023-10-26",
+      "Event": "ECB Marginal Lending Facility",
+      "Previous": "4.75%",
+      "Time (ET)": "08:15",
+      "index": 16
+    },
+    {
+      "Actual": "-",
+      "Consensus": "-",
+      "Country": "Euro Zone",
+      "Date": "2023-10-26",
+      "Event": "ECB Monetary Policy Statement",
+      "Previous": "-",
+      "Time (ET)": "08:15",
+      "index": 17
+    },
+    {
+      "Actual": "4.50%",
+      "Consensus": "4.50%",
+      "Country": "Euro Zone",
+      "Date": "2023-10-26",
+      "Event": "ECB Interest Rate Decision",
+      "Previous": "4.50%",
+      "Time (ET)": "08:15",
+      "index": 18
+    },
+    {
+      "Actual": "1,790K",
+      "Consensus": "1,740K",
+      "Country": "United States",
+      "Date": "2023-10-26",
+      "Event": "Continuing Jobless Claims",
+      "Previous": "1,727K",
+      "Time (ET)": "08:30",
+      "index": 19
+    },
+    {
+      "Actual": "0.5%",
+      "Consensus": "0.2%",
+      "Country": "United States",
+      "Date": "2023-10-26",
+      "Event": "Core Durable Goods Orders",
+      "Previous": "0.5%",
+      "Time (ET)": "08:30",
+      "index": 20
+    },
+    {
+      "Actual": "2.40%",
+      "Consensus": "2.50%",
+      "Country": "United States",
+      "Date": "2023-10-26",
+      "Event": "Core PCE Prices",
+      "Previous": "3.70%",
+      "Time (ET)": "08:30",
+      "index": 21
+    },
+    {
+      "Actual": "4.7%",
+      "Consensus": "1.7%",
+      "Country": "United States",
+      "Date": "2023-10-26",
+      "Event": "Durable Goods Orders",
+      "Previous": "-0.1%",
+      "Time (ET)": "08:30",
+      "index": 22
+    },
+    {
+      "Actual": "5.8%",
+      "Consensus": "-",
+      "Country": "United States",
+      "Date": "2023-10-26",
+      "Event": "Durables Excluding Defense",
+      "Previous": "-0.7%",
+      "Time (ET)": "08:30",
+      "index": 23
+    },
+    {
+      "Actual": "4.9%",
+      "Consensus": "4.3%",
+      "Country": "United States",
+      "Date": "2023-10-26",
+      "Event": "GDP",
+      "Previous": "2.1%",
+      "Time (ET)": "08:30",
+      "index": 24
+    },
+    {
+      "Actual": "3.5%",
+      "Consensus": "2.5%",
+      "Country": "United States",
+      "Date": "2023-10-26",
+      "Event": "GDP Price Index",
+      "Previous": "1.7%",
+      "Time (ET)": "08:30",
+      "index": 25
+    },
+    {
+      "Actual": "3.5%",
+      "Consensus": "4.5%",
+      "Country": "United States",
+      "Date": "2023-10-26",
+      "Event": "GDP Sales",
+      "Previous": "2.1%",
+      "Time (ET)": "08:30",
+      "index": 26
+    },
+    {
+      "Actual": "0.6%",
+      "Consensus": "0.1%",
+      "Country": "United States",
+      "Date": "2023-10-26",
+      "Event": "Goods Orders Non Defense Ex Air",
+      "Previous": "1.1%",
+      "Time (ET)": "08:30",
+      "index": 27
+    },
+    {
+      "Actual": "-85.78B",
+      "Consensus": "-86.20B",
+      "Country": "United States",
+      "Date": "2023-10-26",
+      "Event": "Goods Trade Balance",
+      "Previous": "-84.64B",
+      "Time (ET)": "08:30",
+      "index": 28
+    },
+    {
+      "Actual": "210K",
+      "Consensus": "208K",
+      "Country": "United States",
+      "Date": "2023-10-26",
+      "Event": "Initial Jobless Claims",
+      "Previous": "200K",
+      "Time (ET)": "08:30",
+      "index": 29
+    },
+    {
+      "Actual": "207.50K",
+      "Consensus": "-",
+      "Country": "United States",
+      "Date": "2023-10-26",
+      "Event": "Jobless Claims 4-Week Avg.",
+      "Previous": "206.25K",
+      "Time (ET)": "08:30",
+      "index": 30
+    },
+    {
+      "Actual": "2.9%",
+      "Consensus": "-",
+      "Country": "United States",
+      "Date": "2023-10-26",
+      "Event": "PCE Prices",
+      "Previous": "2.5%",
+      "Time (ET)": "08:30",
+      "index": 31
+    },
+    {
+      "Actual": "4.0%",
+      "Consensus": "-",
+      "Country": "United States",
+      "Date": "2023-10-26",
+      "Event": "Real Consumer Spending",
+      "Previous": "0.8%",
+      "Time (ET)": "08:30",
+      "index": 32
+    },
+    {
+      "Actual": "0.3%",
+      "Consensus": "-",
+      "Country": "United States",
+      "Date": "2023-10-26",
+      "Event": "Retail Inventories Ex Auto",
+      "Previous": "0.6%",
+      "Time (ET)": "08:30",
+      "index": 33
+    },
+    {
+      "Actual": "0.0%",
+      "Consensus": "0.1%",
+      "Country": "United States",
+      "Date": "2023-10-26",
+      "Event": "Wholesale Inventories",
+      "Previous": "-0.1%",
+      "Time (ET)": "08:30",
+      "index": 34
+    },
+    {
+      "Actual": "4.15%",
+      "Consensus": "-",
+      "Country": "Canada",
+      "Date": "2023-10-26",
+      "Event": "Average Weekly Earnings",
+      "Previous": "4.20%",
+      "Time (ET)": "08:30",
+      "index": 35
+    },
+    {
+      "Actual": "-0.1%",
+      "Consensus": "-",
+      "Country": "Canada",
+      "Date": "2023-10-26",
+      "Event": "Manufacturing Sales",
+      "Previous": "0.7%",
+      "Time (ET)": "08:30",
+      "index": 36
+    },
+    {
+      "Actual": "-",
+      "Consensus": "-",
+      "Country": "Euro Zone",
+      "Date": "2023-10-26",
+      "Event": "ECB Press Conference",
+      "Previous": "-",
+      "Time (ET)": "08:45",
+      "index": 37
+    },
+    {
+      "Actual": "-",
+      "Consensus": "-",
+      "Country": "United States",
+      "Date": "2023-10-26",
+      "Event": "Fed Waller Speaks",
+      "Previous": "-",
+      "Time (ET)": "09:00",
+      "index": 38
+    },
+    {
+      "Actual": "573.2B",
+      "Consensus": "-",
+      "Country": "Russia",
+      "Date": "2023-10-26",
+      "Event": "Central Bank reserves (USD)",
+      "Previous": "569.6B",
+      "Time (ET)": "09:00",
+      "index": 39
+    },
+    {
+      "Actual": "1.1%",
+      "Consensus": "-1.8%",
+      "Country": "United States",
+      "Date": "2023-10-26",
+      "Event": "Pending Home Sales",
+      "Previous": "-7.1%",
+      "Time (ET)": "10:00",
+      "index": 40
+    },
+    {
+      "Actual": "72.6",
+      "Consensus": "-",
+      "Country": "United States",
+      "Date": "2023-10-26",
+      "Event": "Pending Home Sales Index",
+      "Previous": "71.8",
+      "Time (ET)": "10:00",
+      "index": 41
+    },
+    {
+      "Actual": "-",
+      "Consensus": "-",
+      "Country": "Euro Zone",
+      "Date": "2023-10-26",
+      "Event": "ECB President Lagarde Speaks",
+      "Previous": "-",
+      "Time (ET)": "10:15",
+      "index": 42
+    },
+    {
+      "Actual": "74B",
+      "Consensus": "80B",
+      "Country": "United States",
+      "Date": "2023-10-26",
+      "Event": "Natural Gas Storage",
+      "Previous": "97B",
+      "Time (ET)": "10:30",
+      "index": 43
+    },
+    {
+      "Actual": "-",
+      "Consensus": "-",
+      "Country": "United States",
+      "Date": "2023-10-26",
+      "Event": "KC Fed Composite Index",
+      "Previous": "-8",
+      "Time (ET)": "11:00",
+      "index": 44
+    },
+    {
+      "Actual": "-",
+      "Consensus": "-",
+      "Country": "United States",
+      "Date": "2023-10-26",
+      "Event": "KC Fed Manufacturing Index",
+      "Previous": "-13",
+      "Time (ET)": "11:00",
+      "index": 45
+    },
+    {
+      "Actual": "-",
+      "Consensus": "-",
+      "Country": "United States",
+      "Date": "2023-10-26",
+      "Event": "4-Week Bill Auction",
+      "Previous": "5.305%",
+      "Time (ET)": "11:30",
+      "index": 46
+    },
+    {
+      "Actual": "-",
+      "Consensus": "-",
+      "Country": "United States",
+      "Date": "2023-10-26",
+      "Event": "8-Week Bill Auction",
+      "Previous": "5.325%",
+      "Time (ET)": "11:30",
+      "index": 47
+    },
+    {
+      "Actual": "-",
+      "Consensus": "-",
+      "Country": "United Kingdom",
+      "Date": "2023-10-26",
+      "Event": "BoE MPC Member Cunliffe Speaks",
+      "Previous": "-",
+      "Time (ET)": "12:45",
+      "index": 48
+    },
+    {
+      "Actual": "-",
+      "Consensus": "-",
+      "Country": "United States",
+      "Date": "2023-10-26",
+      "Event": "7-Year Note Auction",
+      "Previous": "4.673%",
+      "Time (ET)": "13:00",
+      "index": 49
+    },
+    {
+      "Actual": "-",
+      "Consensus": "-",
+      "Country": "Brazil",
+      "Date": "2023-10-26",
+      "Event": "Foreign Exchange Flows",
+      "Previous": "4.078B",
+      "Time (ET)": "13:30",
+      "index": 50
+    },
+    {
+      "Actual": "-",
+      "Consensus": "-",
+      "Country": "United States",
+      "Date": "2023-10-26",
+      "Event": "Fed's Balance Sheet",
+      "Previous": "7,933B",
+      "Time (ET)": "16:30",
+      "index": 51
+    },
+    {
+      "Actual": "-",
+      "Consensus": "-",
+      "Country": "United States",
+      "Date": "2023-10-26",
+      "Event": "Reserve Balances with Federal Reserve Banks",
+      "Previous": "3.250T",
+      "Time (ET)": "16:30",
+      "index": 52
+    },
+    {
+      "Actual": "-",
+      "Consensus": "-",
+      "Country": "Japan",
+      "Date": "2023-10-26",
+      "Event": "CPI Tokyo Ex Food & Energy",
+      "Previous": "2.4%",
+      "Time (ET)": "19:30",
+      "index": 53
+    },
+    {
+      "Actual": "-",
+      "Consensus": "2.5%",
+      "Country": "Japan",
+      "Date": "2023-10-26",
+      "Event": "Tokyo Core CPI",
+      "Previous": "2.5%",
+      "Time (ET)": "19:30",
+      "index": 54
+    },
+    {
+      "Actual": "-",
+      "Consensus": "-",
+      "Country": "Japan",
+      "Date": "2023-10-26",
+      "Event": "Tokyo CPI",
+      "Previous": "2.8%",
+      "Time (ET)": "19:30",
+      "index": 55
+    },
+    {
+      "Actual": "-",
+      "Consensus": "-",
+      "Country": "Japan",
+      "Date": "2023-10-26",
+      "Event": "CPI Tokyo Ex Food and Energy",
+      "Previous": "-0.2%",
+      "Time (ET)": "19:30",
+      "index": 56
+    },
+    {
+      "Actual": "-",
+      "Consensus": "-",
+      "Country": "Australia",
+      "Date": "2023-10-26",
+      "Event": "PPI",
+      "Previous": "3.9%",
+      "Time (ET)": "20:30",
+      "index": 57
+    },
+    {
+      "Actual": "-",
+      "Consensus": "-",
+      "Country": "Australia",
+      "Date": "2023-10-26",
+      "Event": "PPI",
+      "Previous": "0.5%",
+      "Time (ET)": "20:30",
+      "index": 58
+    },
+    {
+      "Actual": "-",
+      "Consensus": "0.50%",
+      "Country": "Singapore",
+      "Date": "2023-10-26",
+      "Event": "URA Property Index",
+      "Previous": "-0.20%",
+      "Time (ET)": "20:30",
+      "index": 59
+    },
+    {
+      "Actual": "-",
+      "Consensus": "-",
+      "Country": "China",
+      "Date": "2023-10-26",
+      "Event": "Chinese Industrial profit YTD",
+      "Previous": "-11.7%",
+      "Time (ET)": "21:30",
+      "index": 60
+    }
+  ],
+  "schema": {
+    "fields": [
+      {
+        "name": "index",
+        "type": "integer"
+      },
+      {
+        "name": "Time (ET)",
+        "type": "string"
+      },
+      {
+        "name": "Country",
+        "type": "string"
+      },
+      {
+        "name": "Event",
+        "type": "string"
+      },
+      {
+        "name": "Actual",
+        "type": "string"
+      },
+      {
+        "name": "Consensus",
+        "type": "string"
+      },
+      {
+        "name": "Previous",
+        "type": "string"
+      },
+      {
+        "name": "Date",
+        "type": "string"
+      }
+    ],
+    "pandas_version": "1.4.0",
+    "primaryKey": [
+      "index"
+    ]
+  }
+}

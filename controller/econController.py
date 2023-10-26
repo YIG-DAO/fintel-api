@@ -18,6 +18,18 @@ def getEconomicEvents():
     payload = jsonify(prepped_data), 200
     return payload
 
+def getEconomicOverview():
+    data = econ.getEconomicOverview()
+    prepped_data = json.loads(data.to_json(orient='table'))
+    payload = jsonify(prepped_data), 200
+    return payload
+
+def getTrendingStocks():
+    data = econ.getTrendingStocks()
+    prepped_data = json.loads(data.to_json(orient='table'))
+    payload = jsonify(prepped_data), 200
+    return payload
+
 def getCovidCases(country):
     """
     TODO MODIFY PAYLOAD FOR PROPER CONSUMPTION
