@@ -1,7 +1,7 @@
 from flask import Blueprint, request
 from controller import econController
 
-VERSION = '/v1/econ'
+VERSION = '/v1/economics'
 econ_blueprint = Blueprint('econ_blueprint', __name__, url_prefix=VERSION)
 
 @econ_blueprint.route('/sources')

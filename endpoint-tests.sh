@@ -22,10 +22,10 @@ curl --request GET \
   --header 'content-type: application/json'
 
 curl --request GET \
-  --url http://localhost:5000/v1/cti/sources \
+  --url http://localhost:5000/v1/cyber/cti/sources \
   --header 'content-type: application/json'
 curl --request GET \
-  --url http://localhost:5000/v1/cti/gov/sources \
+  --url http://localhost:5000/v1/cyber/cti/gov/sources \
   --header 'content-type: application/json'
 
 curl --request GET \
