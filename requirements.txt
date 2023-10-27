@@ -3,7 +3,7 @@ Authlib
 sqlalchemy
 APScheduler
 Flask-Limiter
-twitter
-feedparser
 marshmallow
 openbb
+redis
+python-dotenv

@@ -2,17 +2,18 @@
 import os
 import sys
 import psycopg2 as pg
-
+import redis
 from sqlalchemy import create_engine, text
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
-
+from dotenv import load_dotenv
 
 from configparser import ConfigParser
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(BASE_DIR)
+load_dotenv()
 
 def gds_config(filename=BASE_DIR+'/db/database.ini', section='gds'):
     # create a parser
@@ -31,26 +32,45 @@ def gds_config(filename=BASE_DIR+'/db/database.ini', section='gds'):
 
     return db
 
-def test_connect():
-    """ Connect to the PostgreSQL database server """
-    gds_conn = None
+def redis_config():
+    r_config = {
+        'host': os.getenv('REDIS_HOST'),
+        'port': os.getenv('REDIS_PORT'),
+        'db': os.getenv('REDIS_DB'),
+        'protocol': 3
+    }
+
+    # Check for missing configuration details
+    missing_configs = [key for key, value in r_config.items() if not value]
+    if missing_configs:
+        raise Exception(f"Missing Redis configuration for: {', '.join(missing_configs)}")
+    return r_config
+
+def test_gds_connection():
     try:
-        # read connection parameters
         gds_params = gds_config()
-
-        # connect to GDS DB
-        print('Connecting to Gnosis Data Store')
-        gds_engine = create_engine(gds_params['jdbc'])
-        print('Gnosis Data Store PostgreSQL database version:')
-        with gds_engine.connect() as gds_connection:
-            gds_version = gds_connection.execute(text('SELECT version()'))
-            for i in gds_version:
-                print(i)
-       
-    except (Exception, pg.DatabaseError) as error:
-        print(error)
-
+        print('Connecting to Gnosis Data Store...')
+        with create_engine(gds_params['jdbc']).connect() as gds_connection:
+            gds_version = gds_connection.execute(text('SELECT version()')).fetchone()
+            print(f'Gnosis Data Store PostgreSQL database version: {gds_version[0]}')
+    except Exception as error:
+        print(f"GDS Error: {error}")
     finally:
-        if gds_engine is not None:
-            gds_engine.dispose()
-            print('Gnosis DB connection closed.')
+        print('Gnosis DB connection closed.')
+
+def test_redis_connection():
+    try:
+        redis_params = redis_config()
+        print('Connecting to Redis...')
+        redis_conn = redis.Redis(host=redis_params['host'], port=redis_params['port'], db=redis_params['db'])
+        if redis_conn.ping():
+            print('Connected to Redis successfully!')
+        else:
+            print('Failed to connect to Redis.')
+    except redis.ConnectionError as error:
+        print(f"Redis Error: {error}")
+
+def test_connect():
+    """ Connect to the PostgreSQL and Redis database servers """
+    test_gds_connection()
+    test_redis_connection()

@@ -1,78 +1,39 @@
-# Crypto Blueprint
-curl --request GET \
-  --url http://localhost:5000/v1/crypto/usd/btc \
-  --header 'content-type: application/json'
+#!/bin/bash
 
-curl --request GET \
-  --url http://localhost:5000/v1/crypto/usd/eth \
-  --header 'content-type: application/json'
+# Define the base URL for your Flask app
+BASE_URL="http://127.0.0.1:5000"
 
-curl --request GET \
-  --url http://localhost:5000/v1/crypto/eur/btc \
-  --header 'content-type: application/json'
+# Define the blueprints/endpoints you want to test
+declare -a endpoints=(
+    "/v1/crypto/usd/btc"
+    "/v1/crypto/usd/eth"
+    "/v1/crypto/eur/btc"
+    "/v1/crypto/eur/eth"
+    "/v1/crypto/usd/all"
+    "/v1/crypto/eur/all"
+    "/v1/crypto/trending"
+    "/v1/cyber/cti/sources"
+    "/v1/cyber/cti/gov/sources"
+    "/v1/economics/sources"
+    "/v1/economics/gov/sources"
+    "/v1/economics/events"
+    "/v1/economics/overview"
+    "/v1/economics/stocks/trending"
+    "/v1/economics/stocks/news"
+    "/v1/scythe/gov/contracts/latest"
+    "/v1/scythe/gov/contracts/aapl"
+    "/v1/scythe/corp/lobbying"
+    "/v1/scythe/gov/congress/trades"
+)
 
-curl --request GET \
-  --url http://localhost:5000/v1/crypto/eur/eth \
-  --header 'content-type: application/json'
+# Iterate over each endpoint and use curl to make a request
+for endpoint in "${endpoints[@]}"
+do
+    echo "Testing $BASE_URL$endpoint..."
+    curl --request GET \
+         --url "$BASE_URL$endpoint" \
+         --header 'content-type: application/json'
+    sleep 1 # Optional: sleep for a second between requests to space out logs
+done
 
-curl --request GET \
-  --url http://localhost:5000/v1/crypto/usd/all \
-  --header 'content-type: application/json'
-curl --request GET \
-  --url http://localhost:5000/v1/crypto/eur/all \
-  --header 'content-type: application/json'
-
-curl --request GET \
-  --url http://localhost:5000/v1/crypto/trending \
-  --header 'content-type: application/json'
-
-# Cyber Blueprint
-curl --request GET \
-  --url http://localhost:5000/v1/cyber/cti/sources \
-  --header 'content-type: application/json'
-curl --request GET \
-  --url http://localhost:5000/v1/cyber/cti/gov/sources \
-  --header 'content-type: application/json'
-
-# Economics Blueprint
-curl --request GET \
-  --url http://localhost:5000/v1/economics/sources \
-  --header 'content-type: application/json'
-
-curl --request GET \
-  --url http://localhost:5000/v1/economics/gov/sources \
-  --header 'content-type: application/json'
-
-curl --request GET \
-  --url http://localhost:5000/v1/economics/events \
-  --header 'content-type: application/json'
-
-curl --request GET  \
-  --url http://localhost:5000/v1/economics/overview  \
-  --header 'content-type: application/json'
-
-curl --request GET  \
-  --url http://localhost:5000/v1/economics/stocks/trending  \
-  --header 'content-type: application/json'
-
-curl --request GET  \
-  --url http://localhost:5000/v1/economics/stocks/news  \
-  --header 'content-type: application/json' 
-
-# Scythe Blueprint
-curl --request GET  \
-  --url http://localhost:5000/v1/scythe/gov/contracts/latest  \
-  --header 'content-type: application/json'
-
-curl --request GET  \
-  --url http://localhost:5000/v1/scythe/gov/contracts/aapl  \
-  --header 'content-type: application/json'
-
-curl --request GET  \
-  --url http://localhost:5000/v1/scythe/corp/lobbying  \
-  --header 'content-type: application/json'
-
-curl --request GET  \
-  --url http://localhost:5000/v1/scythe/gov/congress/trades \
-  --header 'content-type: application/json'  
-
+echo "Finished testing."

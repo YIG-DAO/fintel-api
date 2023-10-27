@@ -35,6 +35,13 @@ user=DB_USER
 jdbc=JDBC_STRING
 ```
 
+Setup Redis config in .env - see .env.example
+```bash
+REDIS_HOST=your_redis_host
+REDIS_PORT=your_redis_port
+REDIS_DB=your_redis_db
+```
+
 ## Yminer Setup
 
 Only Coinmarketcap mining operational

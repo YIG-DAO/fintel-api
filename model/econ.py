@@ -65,3 +65,12 @@ def getStocksNews():
     else:
         data = "OpenBB query issue"
         return data
+
+def getScreenerData():
+    query = openbb.stocks.screener.screener_data()
+    if query is not None:
+        data = query
+        return data
+    else:
+        data = "OpenBB query issue"
+        return data

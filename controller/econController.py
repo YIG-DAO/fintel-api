@@ -36,6 +36,12 @@ def getStocksNews():
     payload = jsonify({'data':prepped_data["data"]}), 200
     return payload
 
+def getScreenerData():
+    data = econ.getScreenerData()
+    prepped_data = json.loads(data.to_json(orient='table'))
+    payload = jsonify({'data':prepped_data["data"]}), 200
+    return payload
+
 def getCovidCases(country):
     """
     TODO MODIFY PAYLOAD FOR PROPER CONSUMPTION
