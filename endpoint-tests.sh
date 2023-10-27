@@ -4,7 +4,7 @@
 BASE_URL="http://127.0.0.1:5000"
 
 # Define the blueprints/endpoints you want to test
-declare -a endpoints=(
+declare -a all_endpoints=(
     "/v1/crypto/usd/btc"
     "/v1/crypto/usd/eth"
     "/v1/crypto/eur/btc"
@@ -24,6 +24,15 @@ declare -a endpoints=(
     "/v1/scythe/gov/contracts/aapl"
     "/v1/scythe/corp/lobbying"
     "/v1/scythe/gov/congress/trades"
+)
+
+declare -a economic_endpoints=(
+    "/v1/economics/sources"
+    "/v1/economics/gov/sources"
+    "/v1/economics/events"
+    "/v1/economics/overview"
+    "/v1/economics/stocks/trending"
+    "/v1/economics/stocks/news"
 )
 
 # Iterate over each endpoint and use curl to make a request

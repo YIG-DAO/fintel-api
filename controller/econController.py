@@ -1,46 +1,34 @@
 from flask import jsonify
 import json
 from model import econ
+from db.orm import base
+from helper.redis import fetch_and_cache_data
+
+REDIS_CONN = base.redis_conn
 
 def getFinanceSources():
-    data = econ.getEconSources()
-    payload = jsonify({'data':data}), 200
-    return payload
+    data, from_cache = fetch_and_cache_data(econ.getEconSources, "getFinanceSources")
+    return jsonify({'data': data, 'from_cache': from_cache}), 200
 
 def getGovFinanceSources():
-    data = econ.getGovEconSources()
-    payload = jsonify({'data':data}), 200
-    return payload
+    data, from_cache = fetch_and_cache_data(econ.getGovEconSources, "getGovFinanceSources")
+    return jsonify({'data': data, 'from_cache': from_cache}), 200
 
 def getEconomicEvents():
-    data = econ.getEconomicEvents()
-    prepped_data = json.loads(data.to_json(orient='table'))
-    payload = jsonify({'data':prepped_data["data"]}), 200
-    return payload
+    data, from_cache = fetch_and_cache_data(econ.getEconomicEvents, "getEconomicEvents", True)
+    return jsonify({'data': data, 'from_cache': from_cache}), 200
 
 def getEconomicOverview():
-    data = econ.getEconomicOverview()
-    prepped_data = json.loads(data.to_json(orient='table'))
-    payload = jsonify({'data':prepped_data["data"]}), 200
-    return payload
+    data, from_cache = fetch_and_cache_data(econ.getEconomicOverview, "getEconomicOverview", True)
+    return jsonify({'data': data, 'from_cache': from_cache}), 200
 
 def getTrendingStocks():
-    data = econ.getTrendingStocks()
-    prepped_data = json.loads(data.to_json(orient='table'))
-    payload = jsonify({'data':prepped_data["data"]}), 200
-    return payload
+    data, from_cache = fetch_and_cache_data(econ.getTrendingStocks, "getTrendingStocks", True)
+    return jsonify({'data': data, 'from_cache': from_cache}), 200
 
 def getStocksNews():
-    data = econ.getStocksNews()
-    prepped_data = json.loads(data.to_json(orient='table'))
-    payload = jsonify({'data':prepped_data["data"]}), 200
-    return payload
-
-def getScreenerData():
-    data = econ.getScreenerData()
-    prepped_data = json.loads(data.to_json(orient='table'))
-    payload = jsonify({'data':prepped_data["data"]}), 200
-    return payload
+    data, from_cache = fetch_and_cache_data(econ.getStocksNews, "getStocksNews", True)
+    return jsonify({'data': data, 'from_cache': from_cache}), 200
 
 def getCovidCases(country):
     """

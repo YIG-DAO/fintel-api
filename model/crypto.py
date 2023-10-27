@@ -4,6 +4,7 @@ from openbb_terminal.sdk import openbb
 CRYPTO = crypto.Crypto
 CRYPTOEUR = crypto.CryptoEUR
 SESSION = base.session
+REDIS_CONN = base.redis_conn
 
 def get_crypto_usd(crypto_symbol):
     symbol = crypto_symbol.upper()

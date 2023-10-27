@@ -11,7 +11,7 @@ gds_engine = create_engine(gds_params['jdbc'])
 Base.metadata.create_all(gds_engine)
 
 redis_params = db.config.redis_config()
-redis_db = redis.Redis(redis_params)
+redis_conn = redis.Redis(host=redis_params['host'], port=redis_params['port'], db=redis_params['db'])
 # create a configured "Session" class
 Session = sessionmaker(bind=gds_engine)
 

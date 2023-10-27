@@ -59,6 +59,7 @@ def test_gds_connection():
         print('Gnosis DB connection closed.')
 
 def test_redis_connection():
+    redis_conn = None
     try:
         redis_params = redis_config()
         print('Connecting to Redis...')
@@ -69,6 +70,11 @@ def test_redis_connection():
             print('Failed to connect to Redis.')
     except redis.ConnectionError as error:
         print(f"Redis Error: {error}")
+    finally:
+        if redis_conn:
+            redis_conn.close()
+            print('Redis connection closed.')
+
 
 def test_connect():
     """ Connect to the PostgreSQL and Redis database servers """
