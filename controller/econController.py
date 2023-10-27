@@ -1,10 +1,7 @@
 from flask import jsonify
 import json
 from model import econ
-from db.orm import base
 from helper.redis import fetch_and_cache_data
-
-REDIS_CONN = base.redis_conn
 
 def getFinanceSources():
     data, from_cache = fetch_and_cache_data(econ.getEconSources, "getFinanceSources")

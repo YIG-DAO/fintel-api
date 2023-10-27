@@ -1,0 +1,77 @@
+Testing http://127.0.0.1:5000/v1/crypto/usd/btc...
+from_cache: true
+
+Status: 200, Completed in 0.002595s
+Testing http://127.0.0.1:5000/v1/crypto/usd/eth...
+from_cache: true
+
+Status: 200, Completed in 0.002542s
+Testing http://127.0.0.1:5000/v1/crypto/eur/btc...
+from_cache: true
+
+Status: 200, Completed in 0.002594s
+Testing http://127.0.0.1:5000/v1/crypto/eur/eth...
+from_cache: true
+
+Status: 200, Completed in 0.002735s
+Testing http://127.0.0.1:5000/v1/crypto/usd/all...
+from_cache: true
+
+Status: 200, Completed in 0.004679s
+Testing http://127.0.0.1:5000/v1/crypto/eur/all...
+from_cache: true
+
+Status: 200, Completed in 0.006313s
+Testing http://127.0.0.1:5000/v1/crypto/trending...
+from_cache: true
+
+Status: 200, Completed in 0.004432s
+Testing http://127.0.0.1:5000/v1/cyber/cti/sources...
+from_cache: true
+
+Status: 200, Completed in 0.006680s
+Testing http://127.0.0.1:5000/v1/cyber/cti/gov/sources...
+from_cache: true
+
+Status: 200, Completed in 0.002664s
+Testing http://127.0.0.1:5000/v1/economics/sources...
+from_cache: true
+
+Status: 200, Completed in 0.002101s
+Testing http://127.0.0.1:5000/v1/economics/gov/sources...
+from_cache: true
+
+Status: 200, Completed in 0.003966s
+Testing http://127.0.0.1:5000/v1/economics/events...
+from_cache: true
+
+Status: 200, Completed in 0.001842s
+Testing http://127.0.0.1:5000/v1/economics/overview...
+from_cache: true
+
+Status: 200, Completed in 0.005430s
+Testing http://127.0.0.1:5000/v1/economics/stocks/trending...
+from_cache: true
+
+Status: 200, Completed in 0.004345s
+Testing http://127.0.0.1:5000/v1/economics/stocks/news...
+from_cache: true
+
+Status: 200, Completed in 0.004764s
+Testing http://127.0.0.1:5000/v1/scythe/gov/contracts/latest...
+from_cache: true
+
+Status: 200, Completed in 0.010040s
+Testing http://127.0.0.1:5000/v1/scythe/gov/contracts/aapl...
+from_cache: true
+
+Status: 200, Completed in 0.005242s
+Testing http://127.0.0.1:5000/v1/scythe/corp/lobbying...
+from_cache: true
+
+Status: 200, Completed in 0.382406s
+Testing http://127.0.0.1:5000/v1/scythe/gov/congress/trades...
+from_cache: true
+
+Status: 200, Completed in 0.003828s
+Finished testing.
