@@ -6,10 +6,17 @@ Ynosis is a Flask API server and data miner designed to scrape, aggregate, and s
 graph TD
 
     A[Client] -->|Request| B[FINTEL API Server]
-    B --> C[Database]
-    D[YMiner Background Worker] --> C
-    D --> E[CoinMarketCap]
+    B -->|Check| C[(Redis Cache)]
+    C -->|Cache Miss| D[(Gnosis Data Store)]
+    D -->|Set Cache| C
+    B --> E
+    E[YMiner Background Worker] --> D
+    E --> F[CoinMarketCap]
+    E --> G[OpenBB]
+    C -->|Return Data| B
     B -->|Response| A
+
+style C fill:#e0e0e0,stroke:#666,stroke-width:2px,shape: cylinder
 ```
 
 ## Installation
