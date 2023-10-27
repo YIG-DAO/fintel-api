@@ -15,25 +15,25 @@ def getGovFinanceSources():
 def getEconomicEvents():
     data = econ.getEconomicEvents()
     prepped_data = json.loads(data.to_json(orient='table'))
-    payload = jsonify(prepped_data["data"]), 200
+    payload = jsonify({'data':prepped_data["data"]}), 200
     return payload
 
 def getEconomicOverview():
     data = econ.getEconomicOverview()
     prepped_data = json.loads(data.to_json(orient='table'))
-    payload = jsonify(prepped_data["data"]), 200
+    payload = jsonify({'data':prepped_data["data"]}), 200
     return payload
 
 def getTrendingStocks():
     data = econ.getTrendingStocks()
     prepped_data = json.loads(data.to_json(orient='table'))
-    payload = jsonify(prepped_data["data"]), 200
+    payload = jsonify({'data':prepped_data["data"]}), 200
     return payload
 
 def getStocksNews():
     data = econ.getStocksNews()
     prepped_data = json.loads(data.to_json(orient='table'))
-    payload = jsonify(prepped_data["data"]), 200
+    payload = jsonify({'data':prepped_data["data"]}), 200
     return payload
 
 def getCovidCases(country):
