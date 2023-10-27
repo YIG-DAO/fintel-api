@@ -24,6 +24,10 @@ def getEconomicOverview():
 def getTrendingStocks():
     return econController.getTrendingStocks()
 
+@econ_blueprint.route('/stocks/news')
+def getStocksNews():
+    return econController.getStocksNews()
+
 """ 
 @econ_blueprint.route('/covid/cases')
 def getCovidCases():

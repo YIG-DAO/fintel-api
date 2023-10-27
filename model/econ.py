@@ -56,3 +56,12 @@ def getTrendingStocks():
     else:
         data = "OpenBB query issue"
         return data
+
+def getStocksNews():
+    query = openbb.stocks.news(term="SPY")
+    if query is not None:
+        data = query
+        return data
+    else:
+        data = "OpenBB query issue"
+        return data

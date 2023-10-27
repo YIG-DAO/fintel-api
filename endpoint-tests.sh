@@ -55,3 +55,24 @@ curl --request GET  \
   --url http://localhost:5000/v1/economics/stocks/trending  \
   --header 'content-type: application/json'
 
+curl --request GET  \
+  --url http://localhost:5000/v1/economics/stocks/news  \
+  --header 'content-type: application/json' 
+
+# Scythe Blueprint
+curl --request GET  \
+  --url http://localhost:5000/v1/scythe/gov/contracts/latest  \
+  --header 'content-type: application/json'
+
+curl --request GET  \
+  --url http://localhost:5000/v1/scythe/gov/contracts/aapl  \
+  --header 'content-type: application/json'
+
+curl --request GET  \
+  --url http://localhost:5000/v1/scythe/corp/lobbying  \
+  --header 'content-type: application/json'
+
+curl --request GET  \
+  --url http://localhost:5000/v1/scythe/gov/congress/trades \
+  --header 'content-type: application/json'  
+

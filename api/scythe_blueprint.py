@@ -19,3 +19,19 @@ def getStockSummary():
     else:
         asset = request.args['asset']
         return scytheController.getStockSummary(asset) """
+
+@scythe_blueprint.route('/gov/contracts/latest')
+def getLatestGovContracts():
+    return scytheController.getLatestGovContracts()
+
+@scythe_blueprint.route('/gov/contracts/<ticker>')
+def getTickerGovContracts(ticker):
+    return scytheController.getTickerGovContracts(ticker=ticker)
+
+@scythe_blueprint.route('/corp/lobbying')
+def getCorpLobbying():
+    return scytheController.getCorpLobbying()
+
+@scythe_blueprint.route('/gov/congress/trades')
+def getCongressTrades():
+    return scytheController.getCongressTrades()
