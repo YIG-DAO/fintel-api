@@ -15,8 +15,6 @@ graph TD
     E --> G[OpenBB]
     C -->|Return Data| B
     B -->|Response| A
-
-style C fill:#e0e0e0,stroke:#666,stroke-width:2px,shape: cylinder
 ```
 
 ## Installation
