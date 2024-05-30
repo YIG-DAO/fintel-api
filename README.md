@@ -1,4 +1,4 @@
-# Ynosis - Financial Intelligence API
+# Financial Intelligence API
 
 Ynosis is a Flask API server and data miner designed to scrape, aggregate, and serve internet intelligence on cyber, crypto, and finance.
 
